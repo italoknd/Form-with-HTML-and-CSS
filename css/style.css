@@ -36,6 +36,7 @@ textarea, input, select{
 /*HEADER*/
 #top > h1, p{
   text-align: center;
+  margin-top: 10px;
 }
 
 #top p{
@@ -49,6 +50,10 @@ form{
   margin: auto;
 }
 
+div{
+  margin-left: 5px;
+}
+
 
 /*FIELDSET 1*/
 fieldset{
@@ -58,6 +63,7 @@ fieldset{
 #flex-container{
   display: flex;
   margin-bottom: 20px;
+  justify-content: safe;
 }
 
 .field{
@@ -66,6 +72,12 @@ fieldset{
 
 
 /*DIV EMAIL*/
+#email, #name, #last-name{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: safe;
+}
+
 #radio-options{
   margin-top: 20px;
 }
@@ -109,7 +121,7 @@ select, option{
 textarea{
   display: block;
   color: var(--letter-color);
-  width: 100%;
+  width: 80%;
   font-size: 1rem;
 }
 
