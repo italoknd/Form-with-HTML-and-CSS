@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form</title>
+</head>
+<body>
+  <div id="top">
+    <h1>Dev registers</h1>
+    <p>Complete your informations below:</p>
+    <br>
+  </div>
+
+  <form action="">
+    <fieldset class="group" id="flex-container">
+      <div class="field">
+        <label for="name"><strong>Name:</strong></label>
+        <input type="text" name="name" id="name" placeholder="Inform your name" required>
+      </div>
+
+      <div class="field">
+        <label for="last-name"><strong>Last Name:</strong></label>
+        <input type="text" name="last-name" placeholder="Inform your last name" required>
+      </div>
+    </fieldset>
+
+    <div class="field">
+      <label for="email"><strong>Email:</strong></label>
+      <input type="email" name="email" id="email" placeholder="Inform your email address" required>
+    </div>
+
+    <div id="radio-options" class="field">
+      <p><strong>In which side your are you focusing on?</strong></p>
+      <label for="devweb">Front-end</label>
+      <input type="radio" name="devweb" id="frontend" value="frontend" checked>
+
+      <label for="">Back-end</label>
+      <input type="radio" name="devweb" id="backend" value="backend">
+
+      <label for="">Fullstack</label>
+      <input type="radio" name="devweb" id="fullstack" value="fullstack">
+    </div>
+
+    <div class="field">
+      <label for=""><strong>Seniority:</strong></label>
+      <select name="seniority" id="seniority">
+        <option value="" selected disabled>Choose one</option>
+        <option value="">Junior</option>
+        <option value="">Full</option>
+        <option value="">Senior</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <fieldset class="group">
+        <label for=""><strong>Select the tecnologies you use:</strong></label>
+
+        <div id="options">
+          <label for="tec1">HTML</label>
+          <input type="checkbox" name="html" id="tec1">
+          <label for="tec2">CSS</label>
+          <input type="checkbox" name="css" id="tec2">
+          <label for="tec3">JAVASCRIPT</label>
+          <input type="checkbox" name="js" id="tec3">
+          <label for="tec4">PHP</label>
+          <input type="checkbox" name="php" id="tec4">
+          <label for="tec5">C#</label>
+          <input type="checkbox" name="c#" id="tec5">
+          <label for="tec6">PYTHON</label>
+          <input type="checkbox" name="python" id="tec6">
+          <label for="tec7">JAVA</label>
+          <input type="checkbox" name="java" id="tec7">
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="field">
+      <label for=""><strong>Tell us a bit more about your experience!</strong></label>
+      <textarea name="xp-area" id="xp-area" rows="10"></textarea>
+    </div>
+
+    <button type="submit" class="button">Send</button>
+  </form>
+</body>
+</html>
